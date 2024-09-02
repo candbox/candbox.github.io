@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Candbox Software</title>
+    <style>
+      html, body {
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+        font-size: 16px;
+        font-family: Helvetica;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      *:active {
+        outline:none;
+      }
+      #content {
+        display:grid;
+        grid-template-columns: 170px auto;
+        height:100%;
+      }
+      #nav {
+        width: 100%;
+        height: 50px;
+        text-align:center;
+        height:100%;
+        background-color:#d9e0c9;
+      }
+      #nav a {
+        line-height:50px;
+        text-decoration:none;
+        color: black;
+        font-size: 32px;
+        display: block;
+		text-align:right;
+		padding:0 8px;
+		font-size: 18px;
+		border-bottom: solid 1px #000;
+      }
+      #nav a:hover {
+        background-color: rgba(0,0,0,0.1)
+      }
+      #nav dd {
+            line-height: 20px;
+            font-size: 18px;
+			display: initial;
+      }
+      main {
+        display:inline-block;
+        margin:0px;
+        height:100%;
+      }
+      .page {
+        display: none;
+        background-color:#ffeecc;
+        padding-left:20px;
+        padding-top:20px;
+        margin:0px;
+        height: 100%;
+      }
+      .page h1 {
+        margin:0px;
+      }
+      .default {
+        display:block;
+      }
+      :target {
+        display:block;
+      }
+      :target ~ .default {
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <nav id="nav">
+        <a href="#about"><dt>About</dt><dd>关于作者</dd></a>
+        <a href="#software"><dt>Software</dt><dd>软件</dd></a>
+        <a href="#example"><dt>Examples</dt><dd>资料或例子</dd></a>
+        <a href="#apps"><dt>APP</dt><dd>一些APP代码</dd></a>
+		<a href="#services"><dt>Services</dt><dd>国际商务</dd></a>
+        <a href="#donate"><dt>Donate</dt><dd>在线赞助</dd></a>
+		<a href="#thanks"><dt>Thanks</dt><dd>感谢</dd></a>
+      </nav>
+      <main>       
+		<!------------------------software--page------------------------->	  
+        <div id="software" class="page">
+          <h1>Software</h1>
+          <p>这里主要列出作者开发的一些PC软件，包括window, linux环境的各种小工具软件或代码。</p>
+		  <p>作者所有软件特点：尽量不牵扯第三方资源，不用第三方API，以及不用第三方公共链接库。独立，简单，实用，兼容多数设备。</p>
+        </div>
+		<!------------------------example--page------------------------->
+        <div id="example" class="page">
+          <h1>Few examples</h1>
+          <p>主要包含来自网络的一些经典代码。</p>
+        </div>
+		<!------------------------APP--page------------------------->
+        <div id="apps" class="page">
+          <h1>Few Apps</h1>
+          <p>Swift是一门实用的编程语言，入门简单，用途明确。是开发APP的最佳语言，几乎与html语言类似的易用性。问题就出在apple的硬件成本，以及无限坑爹的软件版本升级。从swift-5.3不停升级换代以及大陆的app备案制，以及IOS的App收入太少。作者放弃了ios应用商店app开发。</p>
+		 </div>
+		<!------------------------Services--page------------------------->
+        <div id="services" class="page">
+          <h1>International business services</h1>
+          <p>国际业务主要以工厂，库存，货物验收，以及技术服务；个人业务包括从深圳到国境内的探亲，访友，定期收租等业务。</p>
+		  <p>离境合作业务，以及黄毒赌等业务均不提供。</p>
+        </div>
+		<!------------------------donate--page------------------------->
+        <div id="donate" class="page">
+          <h1>Donate (在线赞助)</h1>
+          <p>目前，缺的东西很多 ...</p>
+		  <p>若作者的软件能为你提供帮助, 欢迎你合理赞助以帮助作者继续开发软件。</p>
+		  <h3>选择以下方式赞助作者</h3>
+		  <br />
+		  <p>
+		  <a href="https://www.paypal.me/segbao"><img src="paypal.png"></a>
+		  </p>
+		  <br />
+		  <p><img src="wechat.png"></p>
+		  <br />
+        </div>
+		<!------------------------thanks--page------------------------->
+		<div id="thanks" class="page">
+          <h1>Thanks you</h1>
+          <p>Thanks you, for all user to help me. and thanks github lets me have one space to build this site page.</p>
+		  <p>感谢大家的帮助。也感谢github提供空间创建该页面.</p>
+		  <p>This page build is use pure css. no js, no cdn.</p>
+		  <p>该页面使用的纯css构建的单页面.仅一个html文件.</p>
+		  <br />
+		  <p>你是否感觉这里很干净，从上到下，从左到右，没有弹窗，和各种动态提示图标让你点这，点那的。</p>
+        </div>
+		<!------------------------about--page------------------------->
+        <div id="about" class="page default">
+          <h1>About</h1>
+          <p>曾经志走天涯，如今梦醒十分。</p>
+		  <p>Brian这个英语昵称伴随作者外贸业NN多年。</p>
+		  <p>从小学三年级洗出黑白照片，到田间用泥巴造东风大卡...(还是灶火加固型,LOL...), </p>
+		  <p>造就作者酷爱动手的个性。</p>
+		  <p>目前的技能： 软硬件，一半一半。</p>
+		  <br />
+		  <p>--- 以上就是关于作者的完整介绍</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
